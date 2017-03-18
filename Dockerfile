@@ -12,10 +12,7 @@ RUN set -x \
     && unzip -x /tmp/www.zip \
     && cp -r /tmp/* /var/www/html/ \
     && /etc/init.d/mysql start \
-    && mysql -e "CREATE DATABASE 123phpshop DEFAULT CHARACTER SET utf8;" -uroot -p \
-    && mysql -e "use 123phpshop;source /tmp/123phpshop.sql;" -uroot -p \
-    && rm -rf /tmp/* \
-    && chown -R www-data:www-data /var/www/html
+    
 
 COPY src/start.sh /start.sh
 RUN chmod a+x /start.sh
