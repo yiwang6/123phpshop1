@@ -10,8 +10,7 @@ WORKDIR /tmp
 RUN set -x \
     && rm -rf /var/www/html/* \
     && unzip -x /tmp/www.zip \
-    && cp -r /tmp/* /var/www/html/ \
-    && /etc/init.d/mysql start \
+ 
     
 
 COPY src/start.sh /start.sh
