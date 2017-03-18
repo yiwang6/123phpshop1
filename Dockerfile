@@ -9,7 +9,7 @@ RUN apt-get install -y unzip
 WORKDIR /tmp
 RUN set -x \
     && rm -rf /var/www/html/* \
-    && unzip -x /tmp/www.zip \
+    
  
     
 
