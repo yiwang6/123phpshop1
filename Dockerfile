@@ -1,4 +1,4 @@
-FROM yiwang666/lamp
+FROM yiwang6/lamp
 MAINTAINER YiWanG <admin@yiwang6.cn>
 
 COPY src/www.zip /tmp/www.zip
